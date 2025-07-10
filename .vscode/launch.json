@@ -1,0 +1,62 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Node.js Accounting App",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/accounting/index.js",
+            "cwd": "${workspaceFolder}/src/accounting",
+            "console": "integratedTerminal",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ]
+        },
+        {
+            "name": "Debug Node.js Accounting App",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/accounting/index.js",
+            "cwd": "${workspaceFolder}/src/accounting",
+            "console": "integratedTerminal",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "stopOnEntry": false,
+            "args": [],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ]
+        },
+        {
+            "name": "Run Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/accounting/node_modules/.bin/jest",
+            "cwd": "${workspaceFolder}/src/accounting",
+            "console": "integratedTerminal",
+            "args": [
+                "--runInBand",
+                "--detectOpenHandles",
+                "--forceExit"
+            ],
+            "env": {
+                "NODE_ENV": "test"
+            },
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
