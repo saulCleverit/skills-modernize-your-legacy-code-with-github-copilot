@@ -1,0 +1,38 @@
+{
+  "name": "student-account-management",
+  "version": "1.0.0",
+  "description": "Node.js implementation of the legacy COBOL Student Account Management System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "accounting",
+    "student-accounts",
+    "legacy-modernization",
+    "nodejs",
+    "cobol-conversion"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!node_modules/**",
+      "!coverage/**"
+    ]
+  }
+}
